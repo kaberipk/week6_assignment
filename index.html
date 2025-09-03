@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Assignment</title>
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Interactive Page</h1>
+        <!-- Part 2: Interactive Element 1 - Dark Mode Toggle -->
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Part 2: Interactive Element 2 - Counter Game -->
+        <section class="interactive-section">
+            <h2>Counter Game</h2>
+            <p>Click the buttons to change the count!</p>
+            <div class="counter-container">
+                <button id="decrement-btn">-</button>
+                <span id="count-display">0</span>
+                <button id="increment-btn">+</button>
+            </div>
+            <button id="reset-btn">Reset</button>
+        </section>
+
+        <!-- Part 3: Form Validation -->
+        <section class="form-section">
+            <h2>Sign Up</h2>
+            <form id="registration-form">
+                <div class="input-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error-message" id="name-error"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password (min. 6 characters):</label>
+                    <input type="password" id="password" name="password">
+                    <div class="error-message" id="password-error"></div>
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+            <div id="success-message"></div>
+        </section>
+    </main>
+
+    <!-- Link to our JavaScript file -->
+    <script src="script/script.js"></script>
+</body>
+</html>
